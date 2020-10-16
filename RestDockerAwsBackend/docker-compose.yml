@@ -1,0 +1,37 @@
+version: '2'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: servicio1
+    ports:
+      - "8087:4567"
+  web2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: servicio2
+    ports:
+      - "8088:4567"
+  web3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: servicio3
+    ports:
+      - "8089:4567"
+  db:
+    image: mongo:3.6.1
+    container_name: databasemongo
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - 27017:27017
+    command: mongod
+
+volumes:
+  mongodb:
+  mongodb_config:
