@@ -9,7 +9,7 @@ import java.util.List;
 public class ConexionServicios {
 
 
-    MongoClient client = new MongoClient("databasemongo", 27017); //connect to mongodb
+    MongoClient client = new MongoClient("172.17.0.1", 27017); //connect to mongodb
     Datastore datastore = new Morphia().createDatastore(client, "mydatabase1"); //select mydatabase collection
     public List<Usuarios> addUsuarios(Usuarios usuarios){
         usuarios.setFecha_cracion(new Date());

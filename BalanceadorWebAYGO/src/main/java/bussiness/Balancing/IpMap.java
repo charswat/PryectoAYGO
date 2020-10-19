@@ -9,9 +9,9 @@ public class IpMap {
 
     static
     {
-        serverWeightMap.put("http://172.18.0.1:8087/add", 1);
-        serverWeightMap.put("http://172.18.0.2:8088/add", 2);
-        serverWeightMap.put("http://172.18.0.3:8089/add", 3);
+        serverWeightMap.put("http://172.17.0.1:8087/add", 1);
+        serverWeightMap.put("http://172.17.0.1:8088/add", 2);
+        serverWeightMap.put("http://172.17.0.1:8089/add", 3);
 
     }
 }

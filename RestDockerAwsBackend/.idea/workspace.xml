@@ -85,4 +85,9 @@
     </task>
     <servers />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RestDockerAws$Api.ic" NAME="Api Coverage Results" MODIFIED="1603075920297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>facade.*</FILTER>
+    </SUITE>
+  </component>
 </project>

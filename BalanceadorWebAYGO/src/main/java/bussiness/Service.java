@@ -18,14 +18,13 @@ public class Service  {
 
         private String port;
 
-        @GetMapping("/index.html")
-        public String chatNow() {
+        @GetMapping("/")
+        public String getUser() {
             return "application is up on port : " + port;
         }
         @CrossOrigin(origins ="*")
         @PostMapping(value = "/add", consumes = "application/json",produces = "application/json")
-        //@RequestMapping(value = "/add",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE,produces = "application/json")
-        public String invokeCharbook(@RequestBody Usuarios usuario){
+        public String CreacionUsuario(@RequestBody Usuarios usuario){
              Usuarios user = new Usuarios();
             user.setNombre(usuario.getNombre());
             CallBackend callBackend = new CallBackend();
